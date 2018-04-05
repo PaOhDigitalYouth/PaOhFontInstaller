@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.Samsung">
+
+    <ImageView
+        android:id="@+id/tvTop"
+        android:src="@drawable/samsung_top_iv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/liLayout"
+        android:layout_below="@id/tvTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnInstall"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff"
+                android:background="#e74c3c"
+                android:textAllCaps="false"
+                android:text="Install"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnChange"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:background="#2ecc71"
+                android:textAllCaps="false"
+                android:text="Change Font"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:textColor="#ff0004"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="Install ကိုႏွိပ္ၿပီး PaOh Zawgyi(iFont) ကို Install လုပ္ပါ။
+ၿပီးလွ်င္ Change Font ကိုႏွိပ္ၿပီး PaOh Zawgyi(iFont) ကိုေ႐ြးေပးလိုက္ပါ။
+အထက္ပါအဆင့္ေတြေအာင္ျမင္သြားရင္ေတာ့ သင့္ဖုန္းမွာပအိုဝ္းစာဖတ္႐ူ႕ႏိုင္ပါၿပီ။
+စာ႐ိုက္ရန္အတြက္ PaOh Keyboard ကိုထည့္သြင္းၿပီး ပအိုဝ္းစာပါေရးႏိုင္ပါၿပီ။"
+        android:layout_below="@id/liLayout"
+        android:id="@+id/tvDec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/5776294575">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:onClick="dev"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_above="@id/adView"
+        android:gravity="center_horizontal"
+        android:text="Developed By PaOh Digital Youth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

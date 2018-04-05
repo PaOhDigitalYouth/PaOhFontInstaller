@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.noti.PopupActivity">
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:id="@+id/scrollView"
+            android:background="@drawable/webview_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:text="PaOh Keyboard"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:src="@drawable/icon"
+                android:id="@+id/image"
+                android:layout_marginTop="6dp"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#000"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/image"
+                android:text="PaOh Keyboard New Version Released!"
+                android:id="@+id/message"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/download"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="Download Now"
+                android:background="@drawable/dlbg"
+                android:layout_below="@id/message"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:onClick="close"
+            android:layout_alignParentRight="true"
+            android:background="#fff"
+            android:src="@drawable/clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+</ScrollView>

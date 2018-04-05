@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="MIUITheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/MIUIcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/MIUIcolorPrimaryDark</item>
+        <item name="colorAccent">@color/MIUIcolorAccent</item>
+    </style>
+
+    <style name="SamsungTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/SamsungcolorPrimary</item>
+        <item name="colorPrimaryDark">@color/SamsungcolorPrimaryDark</item>
+        <item name="colorAccent">@color/SamsungcolorAccent</item>
+    </style>
+
+    <style name="VivoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/VivocolorPrimary</item>
+        <item name="colorPrimaryDark">@color/VivocolorPrimaryDark</item>
+        <item name="colorAccent">@color/VivocolorAccent</item>
+    </style>
+
+    <style name="OppoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/OppocolorPrimary</item>
+        <item name="colorPrimaryDark">@color/OppocolorPrimaryDark</item>
+        <item name="colorAccent">@color/OppocolorAccent</item>
+    </style>
+
+    <style name="HuaweiTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/HuaweicolorPrimary</item>
+        <item name="colorPrimaryDark">@color/HuaweicolorPrimaryDark</item>
+        <item name="colorAccent">@color/HuaweicolorAccent</item>
+    </style>
+
+    <style name="ASUSTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ASUScolorPrimary</item>
+        <item name="colorPrimaryDark">@color/ASUScolorPrimaryDark</item>
+        <item name="colorAccent">@color/ASUScolorAccent</item>
+    </style>
+
+</resources>

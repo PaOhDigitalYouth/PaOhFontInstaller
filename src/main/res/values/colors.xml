@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="MIUIcolorPrimary">#54C591</color>
+    <color name="MIUIcolorPrimaryDark">#2DB084</color>
+    <color name="MIUIcolorAccent">#FF4081</color>
+
+    <color name="VivocolorPrimary">#0094da</color>
+    <color name="VivocolorPrimaryDark">#0094da</color>
+    <color name="VivocolorAccent">#fbc531</color>
+
+    <color name="OppocolorPrimary">#00925f</color>
+    <color name="OppocolorPrimaryDark">#037b51</color>
+    <color name="OppocolorAccent">#00925f</color>
+
+    <color name="HuaweicolorPrimary">#00a8ff</color>
+    <color name="HuaweicolorPrimaryDark">#00a8ff</color>
+    <color name="HuaweicolorAccent">#4cd137</color>
+
+    <color name="ASUScolorPrimary">#222222</color>
+    <color name="ASUScolorPrimaryDark">#000000</color>
+    <color name="ASUScolorAccent">#FF222222</color>
+
+    <color name="SamsungcolorPrimary">#0c4da2</color>
+    <color name="SamsungcolorPrimaryDark">#083979</color>
+    <color name="SamsungcolorAccent">#0f60ca</color>
+</resources>

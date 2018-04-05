@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_samsung"
+            android:icon="@drawable/ic_font"
+            android:title="Samsung" />
+        <item
+            android:id="@+id/nav_miui"
+            android:icon="@drawable/ic_font"
+            android:title="Xiaomi" />
+        <item
+            android:id="@+id/nav_vivo"
+            android:icon="@drawable/ic_font"
+            android:title="Vivo" />
+        <item
+            android:id="@+id/nav_oppo"
+            android:icon="@drawable/ic_font"
+            android:title="Oppo" />
+
+        <item
+            android:id="@+id/nav_huawei"
+            android:icon="@drawable/ic_font"
+            android:title="Huawei" />
+
+        <item
+            android:id="@+id/nav_asus"
+            android:icon="@drawable/ic_font"
+            android:title="ASUS" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/rate"
+                android:title="Rate This App" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>

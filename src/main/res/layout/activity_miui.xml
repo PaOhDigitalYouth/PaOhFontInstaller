@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.MIUI">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:src="@drawable/miui_top_iv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv"
+        android:id="@+id/btnInstall"
+        android:textAllCaps="false"
+        android:background="@drawable/miui_install_bg"
+        android:textColor="#fff"
+        android:text="Install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnInstall"
+        android:id="@+id/btnChange"
+        android:textAllCaps="false"
+        android:background="@drawable/miui_change_bg"
+        android:textColor="#fff"
+        android:text="Change Font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvDec_MI"
+        android:textColor="#ff0004"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btnChange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/5776294575">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:onClick="dev"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_above="@id/adView"
+        android:gravity="center_horizontal"
+        android:text="Developed By PaOh Digital Youth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

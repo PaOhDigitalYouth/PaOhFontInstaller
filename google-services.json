@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "907093241244",
+    "firebase_url": "https://paohapps.firebaseio.com",
+    "project_id": "paohapps",
+    "storage_bucket": "paohapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907093241244:android:421e181b00140c0a",
+        "android_client_info": {
+          "package_name": "com.paohdigitalyouth.paohfontinstaller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907093241244-dt6uo7efu42096qt8hufavqcnoniimgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXY2qGXPJYScd0b4-8JojGhFdNEI2GNjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907093241244:android:2e271860728f4cde",
+        "android_client_info": {
+          "package_name": "com.paohdigitalyouth.paohkeyboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907093241244-dt6uo7efu42096qt8hufavqcnoniimgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXY2qGXPJYScd0b4-8JojGhFdNEI2GNjQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

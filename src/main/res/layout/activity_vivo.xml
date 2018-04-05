@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.Vivo">
+
+    <TextView
+        android:id="@+id/nav"
+        android:background="@color/VivocolorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/vivo_clear_bg"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/vivo_clear_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_below="@id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/vivo_top_iv"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+
+        <Button
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="@drawable/vivo_install_btn_bg"
+            android:id="@+id/btnInstall"
+            android:layout_below="@id/iv"
+            android:text="Install"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:background="@drawable/vivo_change_btn_bg"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnInstall"
+            android:id="@+id/btnChange"
+            android:text="Change Font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/5776294575">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:onClick="dev"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_above="@id/adView"
+        android:gravity="center_horizontal"
+        android:text="Developed By PaOh Digital Youth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

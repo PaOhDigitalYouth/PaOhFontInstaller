@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.Oppo">
+
+    <TextView
+        android:id="@+id/tvOppoTitle"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#00925f"
+        android:text="Oppo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tvOppoTitle"
+        android:id="@+id/tvOppoPaOhText"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#00925f"
+        android:text="ပအိုဝ္ၒလိတ္"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnInstall"
+        android:textColor="#fff"
+        android:background="#00925f"
+        android:layout_below="@id/tvOppoPaOhText"
+        android:textAllCaps="false"
+        android:text="Install"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnChange"
+        android:textColor="#fff"
+        android:background="#00925f"
+        android:layout_below="@id/btnInstall"
+        android:textAllCaps="false"
+        android:text="Change Font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnChangeV3"
+        android:textColor="#fff"
+        android:background="#00925f"
+        android:layout_below="@id/btnChange"
+        android:textAllCaps="false"
+        android:text="Change Font(Theme)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/5776294575">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:onClick="dev"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_above="@id/adView"
+        android:gravity="center_horizontal"
+        android:text="Developed By PaOh Digital Youth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

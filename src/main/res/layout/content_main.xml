@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+   <ImageView
+       android:id="@+id/iv"
+       android:layout_centerHorizontal="true"
+       android:src="@drawable/icon"
+       android:layout_width="100dp"
+       android:layout_height="100dp" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:id="@+id/tv"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/iv"
+        android:text="PaOh Font Installer | ပအိုဝ္္ၒေဖာင့္"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+ <LinearLayout
+     android:layout_marginTop="5dp"
+     android:orientation="horizontal"
+     android:id="@+id/li1"
+     android:layout_below="@id/tv"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <LinearLayout
+     android:layout_weight="1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+   <Button
+       android:textColor="#fff"
+       android:background="@drawable/btn_samsung_bg"
+       android:layout_marginRight="5dp"
+       android:textAllCaps="false"
+       android:text="Samsung"
+       android:id="@+id/btnSamsung"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+   <Button
+       android:textColor="#fff"
+       android:background="@drawable/btn_miui_bg"
+       android:layout_marginLeft="5dp"
+       android:textAllCaps="false"
+       android:text="Xiaomi (MI)"
+       android:id="@+id/btnMIUI"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+  </LinearLayout>
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_marginTop="5dp"
+     android:layout_below="@id/li1"
+     android:id="@+id/li2"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+   <Button
+       android:textColor="#fff"
+       android:background="@drawable/btn_vivo_bg"
+       android:layout_marginRight="5dp"
+       android:textAllCaps="false"
+       android:text="Vivo"
+       android:id="@+id/btnVivo"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+   <Button
+       android:textColor="#fff"
+       android:background="@drawable/btn_oppo_bg"
+       android:layout_marginLeft="5dp"
+       android:textAllCaps="false"
+       android:text="Oppo"
+       android:id="@+id/btnOppo"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+ </LinearLayout>
+
+ <LinearLayout
+     android:layout_marginTop="5dp"
+     android:orientation="horizontal"
+     android:layout_below="@id/li2"
+     android:id="@+id/li3"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <LinearLayout
+     android:layout_weight="1"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+   <Button
+       android:textColor="#fff"
+       android:background="@drawable/btn_huawei_bg"
+       android:layout_marginRight="5dp"
+       android:textAllCaps="false"
+       android:text="Huawei"
+       android:id="@+id/btnHuawei"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_weight="1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+   <Button
+       android:textColor="#fff"
+       android:background="@drawable/btn_asus_bg"
+       android:layout_marginLeft="5dp"
+       android:textAllCaps="false"
+       android:text="ASUS"
+       android:id="@+id/btnASUS"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+ </LinearLayout>
+
+ <Button
+     android:textColor="#fff"
+     android:background="@drawable/btn_other_bg"
+     android:layout_marginTop="5dp"
+     android:textAllCaps="false"
+     android:text="Other [#Root]"
+     android:id="@+id/btnOther"
+     android:layout_below="@id/li3"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+
+ <com.google.android.gms.ads.AdView
+     android:layout_marginTop="10dp"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     android:id="@+id/adView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     ads:adSize="BANNER"
+     ads:adUnitId="ca-app-pub-1325188641119577/5776294575">
+ </com.google.android.gms.ads.AdView>
+
+ <TextView
+     android:onClick="dev"
+     android:textStyle="bold"
+     android:textColor="#000"
+     android:layout_above="@id/adView"
+     android:gravity="center_horizontal"
+     android:text="Developed By PaOh Digital Youth"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+
+</RelativeLayout>

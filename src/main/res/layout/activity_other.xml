@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.paohdigitalyouth.paohfontinstaller.Other">
+
+    <TextView
+        android:id="@+id/nav"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <ImageButton
+        android:id="@+id/btnRestore"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/vivo_clear_bg"
+        android:src="@drawable/vivo_clear_ic"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <RelativeLayout
+        android:layout_below="@id/nav"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvOtherTitle"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#c0392b"
+            android:text="#Root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tvOtherTitle"
+            android:id="@+id/tvOtherPaOhText"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="#c0392b"
+            android:text="ပအိုဝ္ၒလိတ္"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/other_install_btnbg"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Install Font"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tvOtherPaOhText"
+            android:id="@+id/btnInstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:background="@drawable/other_install_btnbg"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:text="Install All + COC + Smule"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnInstall"
+            android:id="@+id/btnAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/5776294575">
+    </com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:onClick="dev"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_above="@id/adView"
+        android:gravity="center_horizontal"
+        android:text="Developed By PaOh Digital Youth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

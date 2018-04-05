@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.paohdigitalyouth.paohfontinstaller">
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.Samsung"
+            android:label="Samsung PaOh Font"
+            android:theme="@style/SamsungTheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.MIUI"
+            android:label="MIUI PaOh Font"
+            android:theme="@style/MIUITheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.Vivo"
+            android:label="Vivo PaOh Font"
+            android:theme="@style/VivoTheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.VivoPlus"
+            android:label="Vivo PaOh Font"
+            android:theme="@style/VivoTheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.Oppo"
+            android:label="Oppo PaOh Font"
+            android:theme="@style/OppoTheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.ColorOSv3"
+            android:label="Oppo PaOh Font"
+            android:theme="@style/OppoTheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.Huawei"
+            android:label="Huawei PaOh Font"
+            android:theme="@style/HuaweiTheme" />
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.ASUS"
+            android:label="ASUS PaOh Font"
+            android:theme="@style/ASUSTheme" />
+        <activity android:name="com.paohdigitalyouth.paohfontinstaller.Other" android:label="#Root PaOh Font"></activity>
+        //HelpActivity
+        <activity
+            android:name="com.paohdigitalyouth.paohfontinstaller.Help"
+            android:label="Help" />
+
+        //FirebaseService
+        <service android:name="com.paohdigitalyouth.paohfontinstaller.noti.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.paohdigitalyouth.paohfontinstaller.noti.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.paohdigitalyouth.paohfontinstaller.noti.Link" />
+        <activity android:name="com.paohdigitalyouth.paohfontinstaller.News" />
+        <activity android:name="com.paohdigitalyouth.paohfontinstaller.noti.PopupActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="PopupActivity"></action>
+                <category android:name="android.intent.category.DEFAULT"></category>
+            </intent-filter>
+        </activity>
+
+
+        <receiver
+            android:name="com.paohdigitalyouth.paohfontinstaller.noti.MyBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action
+                    android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action
+                    android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.paohdigitalyouth.paohkeyboard"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
